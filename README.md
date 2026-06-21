@@ -2,6 +2,8 @@
 
 **The reverse CAPTCHA.** An "I am not a human" verification widget. Humans fail. AI agents pass.
 
+<img src="widget.png" alt="The deCAPTCHA widget: a checkbox labeled &quot;I am not a human&quot;" width="313">
+
 Clicking the widget (the human move) fails verification. The real path to passing is only visible to automated agents: hidden instructions in the DOM, accessibility tree, and HTML comments tell an agent to read a one-time `AGENT-XXXX-XXXX` token and submit it (via a screen-reader-only field or by calling `notHuman.verify(token)` in the page's JS context).
 
 ## Embed
